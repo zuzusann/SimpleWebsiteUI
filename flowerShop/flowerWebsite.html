@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Website</title>
 
     <!-- custom css file link -->
-     <link rel="stylesheet" href="css/flowerWebsiteStyle.css">
+    <link rel="stylesheet" href="css/flowerWebsiteStyle.css">
 
     <!-- font awesone cdn link -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -16,11 +17,17 @@
         @import url('https://fonts.googleapis.com/css2?family=Poly:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
+
 <body>
-    
+
     <!-- Header Section -->
-     <header>
+    <header>
 
         <input type="checkbox" name="" id="toggler">
         <label for="toggler" class="fas fa-bars"></label>
@@ -40,47 +47,53 @@
             <a href="#" class="fas fa-shopping-cart"></a>
             <a href="#" class="fas fa-user"></a>
         </div>
-     </header>
+    </header>
 
 
 
-     <!-- Home Section -->
-      <section class="home" id="home">
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>fresh flower</h3>
+            <span> natural & beautiful flowers</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa consequuntur voluptatum esse cumque
+                maxime animi illo, odit perspiciatis, ducimus non recusandae tempora temporibus asperiores hic. Libero
+                quidem impedit tenetur. Illum?</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h1 class="heading"><span> about </span> us </h1>
+
+        <div class="row">
+            <div class="video-container">
+                <video src="video/3838405-uhd_4096_2160_25fps.mp4" loop autoplay muted></video>
+                <h3>best flower sellers</h3>
+            </div>
             <div class="content">
-                <h3>fresh flower</h3>
-                <span> natural & beautiful flowers</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa consequuntur voluptatum esse cumque maxime animi illo, odit perspiciatis, ducimus non recusandae tempora temporibus asperiores hic. Libero quidem impedit tenetur. Illum?</p>
-                <a href="#" class="btn">shop now</a>
+                <h3>why choose us</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error harum labore, vel natus neque
+                    consequuntur consectetur similique, vero, dignissimos inventore eveniet veniam! Sit qui inventore ad
+                    quae magnam debitis nemo!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur commodi error inventore
+                    eligendi ducimus sit, earum quae blanditiis expedita esse voluptatem maiores voluptatum numquam
+                    illum illo fugit quis cumque.</p>
+                <a href="#" class="btn">Learn more</a>
             </div>
-      </section>
+
+        </div>
+    </section>
 
 
-      <!-- About Section -->
-       <section class="about" id="about">
-            <h1 class="heading"><span> about </span> us </h1>
+    <!-- Icons Section -->
 
-            <div class="row">
-                <div class="video-container">
-                    <video src="video/3838405-uhd_4096_2160_25fps.mp4" loop autoplay muted></video>
-                    <h3>best flower sellers</h3>
-                </div>
-                <div class="content">
-                    <h3>why choose us</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error harum labore, vel natus neque consequuntur consectetur similique, vero, dignissimos inventore eveniet veniam! Sit qui inventore ad quae magnam debitis nemo!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur commodi error inventore eligendi ducimus sit, earum quae blanditiis expedita esse voluptatem maiores voluptatum numquam illum illo fugit quis cumque.</p>
-                <a href="#" class="btn">Learn more</a> 
-                </div>
-                
-            </div>
-       </section>
-
-
-       <!-- Icons Section -->
-
-       <section class="icons-section">
+    <section class="icons-section">
 
         <div class="icons">
-            <img src="" alt="flower">
+            <ion-icon name="bicycle-outline"></ion-icon>
             <div class="info">
                 <h3>free delivery</h3>
                 <span>on all orders</span>
@@ -88,7 +101,7 @@
         </div>
 
         <div class="icons">
-            <img src="" alt="flower">
+            <ion-icon name="sunny-outline"></ion-icon>
             <div class="info">
                 <h3>10 days returns</h3>
                 <span>moneyback garantee</span>
@@ -96,7 +109,7 @@
         </div>
 
         <div class="icons">
-            <img src="" alt="flower">
+            <ion-icon name="flower-outline"></ion-icon>
             <div class="info">
                 <h3>offer & gifts</h3>
                 <span>on all orders</span>
@@ -104,309 +117,377 @@
         </div>
 
         <div class="icons">
-            <img src="" alt="flower">
+            <ion-icon name="server-outline"></ion-icon>
             <div class="info">
                 <h3>secure payments</h3>
                 <span>propected by paypal</span>
             </div>
         </div>
 
-       </section>
+    </section>
 
 
-       <!-- Product Section -->
+    <!-- Product Section -->
 
-       <section class="products" id="products">
+    <section class="products" id="products">
 
-            <h1 class="heading"> latest <span>products</span></h1>
+        <h1 class="heading"> latest <span>products</span></h1>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-10%</span>
-                    <div class="image">
-                        <img src="image/bouquet1.jpeg" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="image/bouquet1.jpeg" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-15%</span>
-                    <div class="image">
-                        <img src="image/bouquet2.webp" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="image/bouquet2.webp" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-5%</span>
-                    <div class="image">
-                        <img src="image/bouquet3.jpeg" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="image/bouquet3.jpeg" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-20%</span>
-                    <div class="image">
-                        <img src="image/bouquet4.webp" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="image/bouquet4.webp" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-17%</span>
-                    <div class="image">
-                        <img src="image/bouquet5.webp" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-17%</span>
+                <div class="image">
+                    <img src="image/bouquet5.webp" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-3%</span>
-                    <div class="image">
-                        <img src="image/bouquet6.webp" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-3%</span>
+                <div class="image">
+                    <img src="image/bouquet6.webp" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-10%</span>
-                    <div class="image">
-                        <img src="image/bouquet7.jpeg" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="image/bouquet7.jpeg" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-18%</span>
-                    <div class="image">
-                        <img src="image/bouquet8.webp" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-18%</span>
+                <div class="image">
+                    <img src="image/bouquet8.webp" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-3%</span>
-                    <div class="image">
-                        <img src="image/bouquet9.jpeg" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-3%</span>
+                <div class="image">
+                    <img src="image/bouquet9.jpeg" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-8%</span>
-                    <div class="image">
-                        <img src="image/bouquet10.webp" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-8%</span>
+                <div class="image">
+                    <img src="image/bouquet10.webp" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-10%</span>
-                    <div class="image">
-                        <img src="image/bouquet11.webp" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="image/bouquet11.webp" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-10%</span>
-                    <div class="image">
-                        <img src="image/bouquet12.webp" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="image/bouquet12.webp" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-10%</span>
-                    <div class="image">
-                        <img src="image/bouquet13.jpeg" alt="flower">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">add to cart</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="image/bouquet13.jpeg" alt="flower">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
                     </div>
-                    <div class="content">
-                        <h3>flower Bouquet</h3>
-                        <div class="price"> $12.99 <span>$15.99</span></div>
-                    </div>
+                </div>
+                <div class="content">
+                    <h3>flower Bouquet</h3>
+                    <div class="price"> $12.99 <span>$15.99</span></div>
                 </div>
             </div>
+        </div>
 
 
-       </section>
+    </section>
 
 
-       <!-- Review Section -->
+    <!-- Review Section -->
 
-       <section class="review" id="review">
+    <section class="review" id="review">
 
-            <h1 class="heading"> customers's <span>review</span> </h1>
+        <h1 class="heading"> customers's <span>review</span> </h1>
 
-            <div class="box-container">
+        <div class="box-container">
 
-                <div class="box">
-                    <div class="stars">
-                        <i class="fas fa-star"> </i>
-                        <i class="fas fa-star"> </i>
-                        <i class="fas fa-star"> </i>
-                        <i class="fas fa-star"> </i>
-                        <i class="fas fa-star"> </i>
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem illo dolorum accusamus repellendus aliquid, perferendis blanditiis sit possimus unde qui hic animi doloribus nihil maiores iste quis ipsum tempora corrupti?</p>
-                    <div class="user">
-                        <img src="" alt="user">
-                        <div class="user-info">
-                            <h3>john deo</h3>
-                            <span>happy customer</span>
-                        </div>
-                    </div>
-                    <span class="fas fa-quote-right"></span>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
                 </div>
-
-                <div class="box">
-                    <div class="stars">
-                        <i class="fas fa-star"> </i>
-                        <i class="fas fa-star"> </i>
-                        <i class="fas fa-star"> </i>
-                        <i class="fas fa-star"> </i>
-                        <i class="fas fa-star"> </i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem illo dolorum accusamus repellendus
+                    aliquid, perferendis blanditiis sit possimus unde qui hic animi doloribus nihil maiores iste quis
+                    ipsum tempora corrupti?</p>
+                <div class="user">
+                    <img src="" alt="user">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <span>happy customer</span>
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem illo dolorum accusamus repellendus aliquid, perferendis blanditiis sit possimus unde qui hic animi doloribus nihil maiores iste quis ipsum tempora corrupti?</p>
-                    <div class="user">
-                        <img src="" alt="user">
-                        <div class="user-info">
-                            <h3>john deo</h3>
-                            <span>happy customer</span>
-                        </div>
-                    </div>
-                    <span class="fas fa-quote-right"></span>
                 </div>
-
+                <span class="fas fa-quote-right"></span>
             </div>
 
-       </section>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem illo dolorum accusamus repellendus
+                    aliquid, perferendis blanditiis sit possimus unde qui hic animi doloribus nihil maiores iste quis
+                    ipsum tempora corrupti?</p>
+                <div class="user">
+                    <img src="" alt="user">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span> contact </span></h1>
+
+        <div class="row">
+            
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+              
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Foooter Section -->
+
+    <section class="footer">
+
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">products</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my accounts</a>
+                <a href="#">my order</a>
+                <a href="#">my favourite</a>
+            </div>
+
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+                <a href="#">france</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="#">example@gmail.com</a>
+                <a href="#">mumbai, india -400104</a>
+            </div>
+        </div>
+
+        <div class="credit"> created by <span> mr. web designr</span> | all rights reserve</div>
+
+    </section>
 
 </body>
+
 </html>
