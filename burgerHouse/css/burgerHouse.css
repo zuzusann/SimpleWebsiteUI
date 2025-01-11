@@ -23,7 +23,7 @@ body{
     height: 100vh;
     background-color: #db9fdb;
     color: white;
-    transition: .5s ease;
+    position: relative;
 }
 
 /* Header Section */
@@ -34,9 +34,12 @@ header{
     justify-content: space-between;
     font-size: 2rem;
     margin: 2rem;
-    width: 100%;
     background-color: transparent;
     border-bottom: .5rem solid var(--yellow);
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
     z-index: 100;
 }
 
@@ -58,7 +61,7 @@ header .logo .name:hover{
 
 header nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -79,8 +82,9 @@ header nav a:hover{
 .home{
     display: flex;
     justify-content: space-between;
-    margin: 2rem; 
-  
+    align-items: center;
+    height: 100%;
+    padding: 5rem 5% 0;
 }
 
 .home .home-info{
@@ -91,8 +95,9 @@ header nav a:hover{
 .home .home-info h1{
     font-size: 5rem;
     font-weight: 800;
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
     cursor: pointer;
+    color: var(--yellow);
 }
 
 .home .home-info h1:hover{
@@ -100,16 +105,21 @@ header nav a:hover{
 }
 
 .home .home-info p{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 300;
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
     cursor: pointer;
     margin-bottom: 3rem;
     color: aliceblue;
 }
 
+.home .home-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .home .home-info .main-btn{
-    margin-left: 10rem;
     font-size: 2rem;
     font-weight: 500;
     padding: 2rem 3rem;
@@ -162,6 +172,11 @@ header nav a:hover{
     color: aliceblue;
 }
 
+.special .main-image{
+    background: rgba(255, 255, 255, .1);
+    border-radius: 5rem;
+}
+
 
 /* Menu Section */
 
@@ -175,22 +190,16 @@ header nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--yellow);
-}
-
-.menu .menu-info h1{
-    font-size: 5rem;
-    font-weight: 800;
-}
-
-.menu .menu-info h1:hover{
-    color: var(--yellow);
 }
 
 .menu .menu-info h5{
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 4rem;
+    font-weight: 700;
     cursor: pointer;
+}
+
+.menu .menu-info span{
+    color: var(--yellow);
 }
 
 .menu .burger-img{
@@ -216,6 +225,7 @@ header nav a:hover{
     font-weight: 1000;
     color: var(--yellow);
 }
+
 
 .menu .order-btn .main-btn{
     margin-left: 50rem;
@@ -267,13 +277,18 @@ header nav a:hover{
 }
 
 .location .location-info .social-icons a{
+    display: inline-flex;
     color: black;
     font-size: 4rem;
-    margin-right: 3rem;
+    margin: 0 3rem;
+    border: .2rem solid var(--yellow);
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .location .location-info .social-icons a:hover{
     color: var(--yellow);
+    background-color: black;
 }
 
 
