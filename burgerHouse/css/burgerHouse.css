@@ -33,13 +33,12 @@ header{
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
-    margin: 2rem;
-    background-color: transparent;
+    background-color: purple;
     border-bottom: .5rem solid var(--yellow);
     top: 0;
     left: 0;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 100;
 }
 
@@ -138,15 +137,13 @@ header nav a:hover{
 
 .special{
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 5rem; 
     width: 100%;
-    margin-bottom: 10rem;
 }
 
-.special .main-image img{
-    margin-right: 10rem;
-    
-}
+
 
 .special .special-info{
     margin: 10rem;
@@ -252,6 +249,7 @@ header nav a:hover{
 
 .location .location-info h1{
     font-size: 5rem;
+    color: var(--yellow);
     cursor: pointer;
 }
 
@@ -289,6 +287,13 @@ header nav a:hover{
 }
 
 
+/* Footer Section */
 
-
-
+footer{
+    background-color: purple;
+    border-top: .5rem solid var(--yellow);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+}
