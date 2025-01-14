@@ -1,0 +1,216 @@
+:root{
+    --bg-color: #444;
+    --form-bg-color : #111;
+    --text-clolor: black;
+    --hover-color: black;
+    --hover-text-color: white;
+}
+
+/* Base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Poppins","Poly", serif;
+}
+
+/* Body */
+body{
+    background-color: var(--bg-color);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Container */
+.form-container{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--form-bg-color);
+    border: 3px solid rgb(3, 3, 3);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px white;
+    transition: all 0.3s ease;  
+}
+
+
+.form-container:hover{
+    transform: translateY(-1px);
+}
+
+/* Form title */
+.form-container .form-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+/* Form Box */
+.form-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    width: 100%;
+}
+
+.input-box{
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+}
+
+.input-box input{
+    background: var(--form-bg-color);
+    border: none;
+    border-radius: 20px;
+    color: var(--text-clolor);
+    height: 40px;
+}
+
+.input-box input::placeholder{
+    padding-left: 15px;
+}
+
+.input-box input:hover{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.forgot-pass{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.form-box .forgot-pass a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Form Button*/
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.btn{
+    font-weight: 500;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.login-btn a , .register-btn a{
+    border: 1px solid rgba(206, 185, 185, 0);
+    background-color: white;
+    color: var(--form-bg-color);
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+   
+}
+
+.btn:hover{
+    background-color: var(--bg-color);
+    color: var(--hover-text-color);
+}
+
+.btn-container span{
+    color: whitesmoke;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+/* Social Login */
+.social-login{
+    display: flex;
+    gap: 20px;
+    color: whitesmoke;
+    margin-top: 10px;
+    font-size: 30px;
+    margin-top: 2rem;
+    transition: .3s;
+}
+
+.social-login .social-login-icon:hover{
+    color: var(--bg-color);
+}
+
+
+/* Register Form */
+
+
+.register-form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+.register-form-box .input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select{
+    appearance: none;
+    cursor: pointer;
+    color: red;
+}
+.register-form-box .input-container input{
+    font-size: 15px;
+    height: 40px;
+    width: 250px;
+    border:none;
+    border-radius: 3px;
+    color: var(--text-clolor);
+    background-color: var(--bg-color);
+}
+
+.select-box{
+    font-size: 15px;
+    height: 40px;
+    border:none;
+    border-radius: 3px;
+    color: var(--text-clolor);
+    background-color: var(--bg-color);
+}
+
+.select-box .select-option{
+    color: var(--text-clolor);
+}
+
+.register-btn-container{
+    margin-top: 20px;
+}
+
+
+
